@@ -308,6 +308,10 @@ textarea{
   width: 13%;
 }
 
+.no-margin {
+  margin: 0 !important;
+}
+
 .box-ty {
     background-color: #ac0033;
     display: inline-block;
@@ -336,6 +340,25 @@ textarea{
 .footer-tky {
   width: 33%;
   margin-top: 10%;
+}
+
+@media (max-width: 720px) {
+  .logo-ty {
+    width: 50%;
+  }
+  .box-ty {
+    padding: 17px;
+  }
+  .text-1-box {
+    font-size: 25px;
+  }
+  .text-2-box {
+    font-size: 14px;
+  }
+  .footer-tky {
+    width: 99%;
+    margin-top: 45%;
+  }
 }
 
 .content-info-gracias .contact-info img {
