@@ -596,8 +596,7 @@ footer {
 }
 
 .img-project-apto {
-  width: 84%;
-  padding-top: 4%;
+  margin-left: 25%;
 }
 
 #input-header{
@@ -2002,4 +2001,72 @@ section#tres-sesenta {
   background-image: url('bg-360.png');
   background-repeat: no-repeat;
   text-align: center;
+}
+
+.box-nuestro-proyecto {
+    display: inline-block;
+    padding: 5%;
+    margin-top: 5%;
+    background-color: #e86707;
+    display: none;
+}
+
+.box-nuestro-text {
+  color: white;
+  font-family: 'Dosis-SemiBold';
+  font-size: 25px;
+}
+
+ .right-project {
+   padding-bottom: 0%;
+   margin-left: 6%;
+   max-width: 50%;
+ }
+
+ .left-side {
+   min-width: 40%;
+   max-width: 40%;
+   padding-left: 0%;
+ }
+
+@media (max-width: 720px){
+  #apartamentos {
+    background-size: cover;
+  }
+  .box-nuestro-proyecto{
+    display: inline-block;
+  }
+  .img-project-apto {
+    display: none;
+  }
+  .right-project {
+    padding-bottom: 5%;
+  }
+  .left-side {
+    min-width: inherit;
+    max-width: inherit;
+  }
+  .right-project {
+     margin-left: inherit;
+     max-width: inherit;
+  }
+  .left-area-title {
+    text-align: center;
+    padding-left: 0%;
+    border: none;
+  }
+  #title-areas h3 {
+    font-size: 25px;
+  }
+  #title-areas h3 strong {
+    font-size: 28px;
+  }
+  .roght {
+    margin-top: 10%;
+    text-align: center;
+    padding-left: 0%;
+  }
+  #title-areas h3 span {
+    position: relative;
+  }
 }
