@@ -26,4 +26,8 @@ class ApplicationController < ActionController::Base
 
     redirect_to thank_you_page_top_path
   end
+  private
+  def user_params
+    params.require(:user).permit(:name, :email, :country, :phone, :comment)
+  end
 end
