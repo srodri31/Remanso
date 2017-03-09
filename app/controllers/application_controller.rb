@@ -37,7 +37,7 @@ class ApplicationController < ActionController::Base
 
       HTTParty.post('http://api.hablacreativo.com/api/habla/v1/contacto/nuevo',
         :query => { "contact[name]" => user.name, "contact[email]" => user.email, "contact[phone]" => user.phone,
-                    "contact[city]" => user.country, "contact[comment]" => user.comment, "contact[project]" => "amaretto-landing"},
+                    "contact[city]" => user.country, "contact[comment]" => user.comment, "contact[project]" => "intercasa-landing"},
         :headers => { "X-Username" => "cecdf9db19aea833@hablacreativo.com", "X-Token" => "3640eb69-a68f-480b-b7f5-1b94944d2784" })
 
       flash[:success] = "¡Suscripción exitosa!"
