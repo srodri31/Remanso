@@ -1088,7 +1088,7 @@ footer {
   background-color: white;
 }
 
-#new_user { width: 97.5%; margin-left: 2.5%;}
+#new_user { width: 97.5%; margin-left: 2.5%; margin-top: 21%; }
 
 #areas .btn-purple { font-size: 1em; font-weight: bold; padding: 4px 12px; margin-top: -12px; }
 #areas { background-color: #FFF; }
@@ -2076,6 +2076,11 @@ section#tres-sesenta {
 .logo-header-container {
     border-radius: 20px 0px 0px 0px;
     padding: 25px;
+    text-align: right;
+}
+
+.img-text-header {
+  padding-top: 50%;
 }
 
 .header-price-info-mobile {
@@ -2087,6 +2092,7 @@ section#tres-sesenta {
   border-radius: 0px 0px 0px 20px;
   font-weight: bold;
   margin-bottom: 0px;
+  text-align: center;
 }
 
 .header-price-info {
@@ -2131,6 +2137,11 @@ a:hover, a:focus {
 }
 .w60 {
   width: 60%;
+}
+.img-promo {
+  position: absolute;
+  left: 9%;
+  top: -15%;
 }
 
 .form-header-container {
@@ -2251,5 +2262,18 @@ a:hover, a:focus {
   }
   a:hover, a:focus {
     color: #ac0033;
+  }
+  #new_user {
+    margin-top: 5%;
+  }
+  .bono-mobile {
+    width: 70%;
+  }
+  .contact-btn-top {
+    margin-bottom: 5%;
+  }
+  .logo-header-container{
+    text-align: center;
+    padding-top: 17%;
   }
 }

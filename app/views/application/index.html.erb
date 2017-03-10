@@ -216,7 +216,7 @@
 
 	<!-- Nav -->
 	<div class="navbar navbar-inverse navbar-fixed-top" id="navigation">
-		<%= image_tag 'logo-header.png', id: 'logo-navbar' %>
+		<%= image_tag 'logo-header.png', id: 'logo-navbar', class: 'hide-on-mobile' %>
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle btn-span" data-toggle="collapse" data-target=".navbar-collapse">
@@ -250,13 +250,14 @@
            <div class="text-center wow" data-wow-delay=".45s">
              <div class="row">
                <div class="col-md-8 col-md-offset-2">
-                 <div class="col-sm-6 no-padding h478">
+                 <div class="col-md-3 col-md-offset-2 no-padding h478">
                    <div class="logo-header-container">
-                     <%= image_tag 'logo_canarias-1.png' %>
-                   </div>                   
-                   <p class="header-price-info"><%= image_tag 'img_bono.png?v=1.0.0',class:'w60 hide-on-mobile', alt: "Bono" %></p>
+										 <%= image_tag 'img-promo.png',class:'hide-on-mobile img-text-header', alt: "Bono" %>
+										 <%= image_tag 'img-text-header-mobile.png',class:'hide-on-desktop show-on-mobile', alt: "Bono" %>
+                   </div>
                  </div>
                  <div class="col-sm-6 form-header-container no-padding hidden-xs">
+									 <%= image_tag 'img_bono.png',class:'img-promo', alt: "Bono" %>
                    <%= form_for @user, url: '/contact_us_top/', id: 'contact-form', method: 'post', class: 'row'  do |u| %>
                      <div class="form-group">
                        <%= u.text_field :name,  required: 'required', type: 'text', class: 'form-control mt20', placeholder: "Nombre*", style: 'color:black;' %>
@@ -292,7 +293,7 @@
 </header>
 
 <article class="hide-on-desktop show-on-mobile">
-	<p class="header-price-info-mobile text-center-import"><%= image_tag 'img_bono.png?v=1.0.0',class:'w60', alt: "Bono" %></p>
+	<p class="header-price-info-mobile text-center-import"><%= image_tag 'img_bono.png?v=1.0.0',class:'bono-mobile', alt: "Bono" %></p>
 	<div class="hidden-form text-center mb20">
 		<%= form_for @user, url: '/contact_us_top/', id: 'contact-form', method: 'post', class: 'row'  do |u| %>
 		<div class="content-hidden-form">
