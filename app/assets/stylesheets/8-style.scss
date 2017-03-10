@@ -42,6 +42,10 @@
   font-style: normal;
 }
 
+$canarias-dark-blue: #1c4c5b;
+$canarias-light-blue: #1ec3f3;
+$canarias-orange: #f6921d;
+
 html,body,div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,img,small,sub,b,dl,dd,dt,ul,li,label,article,details,footer,header,menu,nav,input,textarea,select{
     background:transparent;
     border:0;
@@ -68,8 +72,14 @@ h1, h2, h3, h4, h5, h6 {
     color:#222222;
 }
 
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 .form-control::-webkit-input-placeholder {
-   color: #001D80;
+   color: #a20f32;
+   font-family: 'Dosis-SemiBold';
 }
 
 .form-control:-moz-placeholder { /* Firefox 18- */
@@ -81,7 +91,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-control:-ms-input-placeholder {
-   color: #001D80;
+   color: #a20f32;
+  font-family: 'Dosis-SemiBold';
 }
 
 #contacto .form-control::-webkit-input-placeholder {
@@ -589,14 +600,14 @@ footer {
     background-position: center center;
 }
 
-#apartamentos{
+#proyecto{
   background-image: url('bg-project.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .img-project-apto {
-  margin-left: 25%;
+  margin-left: 24%;
 }
 
 #input-header{
@@ -615,6 +626,10 @@ footer {
 }
 
 .contact-info{
+}
+
+.hide-on-desktop {
+  display: none;
 }
 
 .contact-info img { max-width: 150px!important;}
@@ -872,8 +887,8 @@ footer {
 .ml-14 {
   margin-left: 14px;
 }
-#apartamentos .mycontainer{ padding-bottom: 0; }
-#apartamentos ul > li {
+#proyecto .mycontainer{ padding-bottom: 0; }
+#proyecto ul > li {
   font-family: 'Dosis-Book';
   color: white;
   font-size: 15px;
@@ -882,7 +897,7 @@ footer {
 #aptos-title { max-width: 200px !important; }
 #aptos-text {
   padding: 34px;
-  padding: 34px 34px 0px 34px;
+  padding: 6px 34px 0px 34px;
   margin: 30px 0;
   border-radius: 14px;
   font-family: 'Dosis-Book';
@@ -895,7 +910,7 @@ footer {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  #apartamentos .mycontainer {
+  #proyecto .mycontainer {
     width: 100%;
   }
 }
@@ -2009,6 +2024,8 @@ section#tres-sesenta {
     margin-top: 5%;
     background-color: #e86707;
     display: none;
+    margin-top: 12%;
+    margin-left: 25%;
 }
 
 .box-nuestro-text {
@@ -2029,12 +2046,127 @@ section#tres-sesenta {
    padding-left: 0%;
  }
 
-@media (max-width: 720px){
-  #apartamentos {
+ .logo-area-1 {
+   width: 60%;
+ }
+
+ .logo-area-2 {
+   width: 50%;
+ }
+
+ #inicio {
+  padding-bottom: 10%;
+  padding-top: 10%;
+  background-image: url('banner-header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-umbral-header {
+  margin-left: 6%;
+  width: 8%;
+  position: absolute;
+}
+
+.h478 {
+  height: 478px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 20px 0px 0px 20px;
+}
+.logo-header-container {
+    border-radius: 20px 0px 0px 0px;
+    padding: 25px;
+}
+
+.header-price-info-mobile {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 14px 10px 0px 10px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #00504b;
+  border-radius: 0px 0px 0px 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.header-price-info {
+    padding: 30px 10px 37px 10px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #00504b;
+    border-radius: 0px 0px 0px 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    text-align: center;
+    height: 28%;
+}
+
+.sector {
+  font-family: "Agape-Light";
+  font-size: 22px;
+  color: $canarias-dark-blue;
+  background: $canarias-light-blue;
+  padding: 4px;
+  font-weight: 100;
+  text-align: center;
+}
+.contact-btn-top {
+  margin-top: 3% !important;
+  color: white !important;
+  background-color: #f6921d !important;
+  font-size: 15px !important;
+  border-radius: 8px;
+  padding: 5px 20px 5px 20px;
+  font-family: 'Dosis-SemiBold';
+}
+.terms-header {
+  color: white;
+  font-family: 'Dosis-Book';
+}
+a {
+  color: white;
+}
+a:hover, a:focus {
+  color: white;
+}
+.w60 {
+  width: 60%;
+}
+
+.form-header-container {
+    background-color: #a20f32;
+    // background-image: url('fondo-vertical.png');
+    border-radius: 0px 20px 20px 0px;
+    background-repeat: no-repeat;
+    height: 478px;
+    padding: 1% 3% 1% 2%;
+}
+@media (max-width: 767px) {
+  .header-price-info { border-radius: 0px 0px 20px 20px; }
+}
+@media (max-width: 767px) {
+  .logo-header-container { border-radius: 20px 20px 0 0; }
+}
+.header-price-info span { font-size: 25px; }
+
+@media (max-width: 768px){
+  .header-price-info {
+    height: 0%,
+  }
+  .h478 {
+  height: 300px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 20px 20px 20px 20px;
+}
+  .logo-umbral-header {
+    display: none;
+  }
+  #proyecto {
     background-size: cover;
   }
   .box-nuestro-proyecto{
     display: inline-block;
+    margin-left: 7%;
   }
   .img-project-apto {
     display: none;
@@ -2068,5 +2200,56 @@ section#tres-sesenta {
   }
   #title-areas h3 span {
     position: relative;
+  }
+  .margin-top-responsive-box {
+    margin-top: 10%;
+  }
+  .modal-dialog {
+    width: 88%;
+  }
+  .img-left-360 {
+    width: 100%;
+  }
+  .label-360 {
+    text-align: center !important;
+  }
+  .img-right-360 {
+    width: 60%;
+  }
+  .btn-360 {
+    margin-left: 0%;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .center-in-mobile {
+    text-align: center !important;
+  }
+  .no-border-in-mobile {
+    border: none;
+  }
+  .show-on-mobile {
+    display: inline-block;
+  }
+  .ubicacion {
+    height: 259px !important;
+  }
+  .logo-area-1 {
+    width: 80%;
+  }
+  .logo-area-2 {
+    width: 80%;
+  }
+  .pd-left-5 {
+    padding-left: 0%;
+  }
+  .terms-header {
+    color: #ac0033;
+  }
+  a {
+    color: #ac0033;
+  }
+  a:hover, a:focus {
+    color: #ac0033;
   }
 }
