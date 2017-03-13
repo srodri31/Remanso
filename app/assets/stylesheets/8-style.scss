@@ -2046,6 +2046,29 @@ section#tres-sesenta {
    padding-left: 0%;
  }
 
+ .button-container {
+   margin-top: 3%;
+ }
+
+ .button-ty {
+   background-color: #ac0033;
+   padding: 10px 20px;
+   border-radius: 25px;
+ }
+
+ @media (max-width: 768px){
+   .button-container {
+     margin-top: 7%;
+   }
+
+   .button-ty {
+     background-color: #ac0033;
+     padding: 10px 20px;
+     border-radius: 25px;
+     color: white;
+   }
+ }
+
  .logo-area-1 {
    width: 60%;
  }
