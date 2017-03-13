@@ -649,3 +649,17 @@
 		</div>
 	</section>
 <%= render partial: 'footer' %>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+	console.log("ready!");
+	var widthForMenu = $(window).width();
+	if (widthForMenu <= 768) {
+		$(document).on('click','.navbar-collapse.in',function(e) {
+		    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+		        $(this).collapse('hide');
+		    }
+		});
+	}
+});
+</script>
