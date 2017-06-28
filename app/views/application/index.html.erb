@@ -573,8 +573,10 @@
 	<section id="contact_us">
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
-			<div class="title-contact">
-				CONTÁCTANOS
+			<div class="div-title">
+				<div class="title-contact">
+					CONTÁCTANOS
+				</div>
 			</div>
 			<%= form_for @user, url: '/contact_us_top/', id: 'contact-form', method: 'post', class: 'row'  do |u| %>
 			<div class="content-hidden-form">
@@ -618,10 +620,21 @@
 		<div class="container mycontainer">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<h3 class="location-project">UBICACIÓN DEL PROYECTO</h3>
+					<div class="div-title">
+						<div class="title">
+							MAPA
+						</div>
+					</div>
 				</div>
 				<div class="col-md-12 text-center">
-					<%= image_tag 'mapa.png', class: 'hide-on-mobile' %>
+					Sector de Belén Rodeo Alto, cerca de la Clínica las Américas, Club el Rodeo, Parque<br>
+					Juan Pablo II, Mall comercial la Gran Vía y La Mota, Éxito de la Gran Vía y sector<br>
+					comercial de Guayabal, entre otras comodidades.
+				</div>
+				<div class="col-md-12 text-center">
+					<%= link_to "#", target: 'blank' do %>
+						<%= image_tag 'Remanso-28.png', class: 'hide-on-mobile' %>
+					<% end %>
 					<div class="">
 						<%= link_to "waze://?ll=6.3336861,-75.5338443&navigate=yes", target: 'blank', class: 'hide-on-desktop show-on-mobile' do %>
 							<%= image_tag 'waze-logo', class: 'wase-logo' %>
@@ -633,30 +646,20 @@
 	</section>
 	<!--/ubicacion -->
 	<section id="sponsors">
-		<h3 class="sponsors-title">GRUPO PROFESIONAL</h3><br>
+		<div class="div-title">
+			<div class="title">
+				GRUPO PROFESIONAL
+			</div>
+		</div>
 		<div class="row">
-			<div class="col-md-2 col-xs-6 col-md-offset-3 mb-3">
+			<div class="col-md-3 col-xs-6 col-md-offset-3 mb-3">
 				<div class="col-md-12">
-					<%= image_tag 'sponsor1.png', class: 'img-sponsors' %>
-				</div>
-				<div class="col-md-12">
-					<span>CONSTRUCCIÓN</span>
+					<%= image_tag 'Remanso-29.png', class: 'img-sponsors' %>
 				</div>
 			</div>
-			<div class="col-md-2 col-xs-6 mb-3">
+			<div class="col-md-3 col-xs-6 mb-3">
 				<div class="col-md-12">
-					<%= image_tag 'sponsor2.png', class: 'img-sponsors' %>
-				</div>
-				<div class="col-md-12">
-					<span>VENTAS</span>
-				</div>
-			</div>
-			<div class="col-xs-6 col-xs-offset-3 col-md-offset-0 col-md-2 mb-3">
-				<div class="col-md-12">
-					<%= image_tag 'sponsor3.png', class: 'img-sponsors' %>
-				</div>
-				<div class="col-md-12">
-					<span>FIDUCIARIA</span>
+					<%= image_tag 'Remanso-30.png', class: 'img-sponsors' %>
 				</div>
 			</div>
 		</div>
