@@ -330,6 +330,11 @@
 					<%= image_tag ('Remanso-09.png'), class: 'img-project-apto' %>
 				</div>
 				<div class="col-md-6 col-xs-12 right-project">
+					<div class="div-title">
+						<div class="title">
+							PROYECTO
+						</div>
+					</div>
 					<p class="text-justify paragraph color-white" id="aptos-text">
 						<strong>Portón del Norte</strong> es un hermoso proyecto de tan solo 2 torres de apartamentos,
 						ubicado en Copacabana, en un sector en pleno desarrollo conocido como
@@ -361,7 +366,11 @@
 		<div  id="atractivos" class="atractivos">
 			<div class="container ">
 				<div id="home-center" class="text-center element_fade_in center-block">
-					<h1 class="titles mb-30">ZONAS SOCIALES</h1>
+					<div class="div-title">
+						<div class="title">
+							ZONAS COMÚNES
+						</div>
+					</div>
 					<div class="row">
 						<div class="col-sm-2">
 						</div>
@@ -558,6 +567,51 @@
 		<!-- /Areas -->
 	</section>
 	<!--/apartamentos -->
+
+
+	<!--Contact -->
+	<section id="contact_us">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+			<div class="title-contact">
+				CONTÁCTANOS
+			</div>
+			<%= form_for @user, url: '/contact_us_top/', id: 'contact-form', method: 'post', class: 'row'  do |u| %>
+			<div class="content-hidden-form">
+				<div class="col-sm-6">
+					<div class="form-group">
+						<%= u.text_field :name,  required: 'required', type: 'text', class: 'form-control mt20', placeholder: "Nombre*", style: 'color:black;' %>
+					</div>
+					<div class="form-group">
+						<%= u.text_field :email,  required: 'required', type: 'email', class: 'form-control', placeholder: "Correo electrónico*", style: 'color:black;' %>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<%= u.text_field :phone,  required: 'required', type: 'text', class: 'form-control', placeholder: "Teléfono*", style: 'color:black;' %>
+					</div>
+					<div class="form-group">
+						<%= u.text_field :country,  required: 'required', type: 'text', class: 'form-control', placeholder: "Ciudad*", style: 'color:black;' %>
+					</div>
+				</div>
+
+				<div class="col-sm-12 sform-group">
+					<%= u.text_area :comment, required: 'required', class: 'form-control', placeholder: "Comentario*", style: 'color:black;' %>
+				</div>
+				
+			</div>
+				<div class="terms-header">
+					Al hacer clic en enviar, estás aceptando los
+					<strong><%= link_to 'términos y condiciones', '#terms-and-conditions-home', class:'',:data =>{:toggle=>"modal"} %></strong>
+				</div>
+				<div class="mt20">
+					<%= submit_tag 'Enviar', name: 'submit', class: 'btn btn-rounded-black contact-btn-top', type: 'submit' %>
+				</div>
+			</div>
+			<% end %>
+			</div>
+		</div>
+	</section>
 
 	<!-- ubicacion -->
 	<section id="ubicacion" class="ubicacion">

@@ -18,6 +18,12 @@ html,body{
     color:#4C4245;
 }
 
+#contact_us {
+  background-image: url('Remanso-27.png');
+  background-size: 100% 100%;
+  width: 100%;
+}
+
 body{
     overflow-x:hidden
 }
@@ -29,6 +35,20 @@ h1, h2, h3, h4, h5, h6 {
     color:#222222;
 }
 
+.div-title {
+  padding: 15px;
+  padding-top: 30PX;
+}
+
+.title {
+  padding: 10px;
+  width: 25%;
+  background: #E7E7E7;
+  border-top-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  margin: auto;
+  text-align: center;
+}
 
 .form-control::-webkit-input-placeholder {
    color: #a20f32;
