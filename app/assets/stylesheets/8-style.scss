@@ -1,46 +1,3 @@
-@font-face {
-  font-family: 'Dosis-Bold';
-  src: url('Dosis-Bold.eot?#iefix') format('embedded-opentype'),
-       url('Dosis-Bold.otf')  format('opentype'),
-       url('Dosis-Bold.woff') format('woff'),
-       url('Dosis-Bold.ttf')  format('truetype'),
-       url('Dosis-Bold.svg#Dosis-Bold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Dosis-SemiBold';
-  src: url('Dosis-SemiBold.eot?#iefix') format('embedded-opentype'),
-       url('Dosis-SemiBold.otf')  format('opentype'),
-       url('Dosis-SemiBold.woff') format('woff'),
-       url('Dosis-SemiBold.ttf')  format('truetype'),
-       url('Dosis-SemiBold.svg#Dosis-Bold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Dosis-Book';
-  src: url('Dosis-Book.eot?#iefix') format('embedded-opentype'),
-       url('Dosis-Book.otf')  format('opentype'),
-       url('Dosis-Book.woff') format('woff'),
-       url('Dosis-Book.ttf')  format('truetype'),
-       url('Dosis-Book.svg#Dosis-Book') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Dosis-Medium';
-  src: url('Dosis-Medium.eot?#iefix') format('embedded-opentype'),
-       url('Dosis-Medium.otf')  format('opentype'),
-       url('Dosis-Medium.woff') format('woff'),
-       url('Dosis-Medium.ttf')  format('truetype'),
-       url('Dosis-Medium.svg#Dosis-Book') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 
 $canarias-dark-blue: #1c4c5b;
 $canarias-light-blue: #1ec3f3;
@@ -72,10 +29,6 @@ h1, h2, h3, h4, h5, h6 {
     color:#222222;
 }
 
-.row {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
 
 .form-control::-webkit-input-placeholder {
    color: #a20f32;
@@ -324,7 +277,7 @@ textarea{
 }
 
 .box-ty {
-    background-color: #ac0033;
+    background-color: #46200D;
     display: inline-block;
     box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.3);
     border-radius: 0px 25px 0px 25px;
@@ -601,7 +554,7 @@ footer {
 }
 
 #proyecto{
-  background-image: url('bg-project.png');
+  background: #F5F5F5;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -619,10 +572,9 @@ footer {
 }
 
 .atractivos{
-    background-color: #FFF;
+    background-color: #F5F5F5;
     height: 510px;
     position: relative;
-    box-shadow: inset 2px 0px 7px 5px rgba(0,0,0,.075), inset 2px 0px 7px 5px rgba(0,0,0,.075);
 }
 
 .contact-info{
@@ -751,7 +703,7 @@ footer {
 }
 
 .titles{
-  color: #ac0033;
+  color: #46200D;
   font-size: 40px;
   font-weight: lighter;
   line-height: 1em;
@@ -1039,7 +991,7 @@ footer {
 .atractivos img {max-height: 100px !important;}
 .atractivos #home-center {width: inherit; padding: 30px 0;}
 .atractivos figcaption {
-  color: #ac0033;
+  color: #46200D;
   font-family: "Dosis-Medium";
   font-size: 16px;
   margin-top: 8px;
@@ -1241,7 +1193,7 @@ footer {
 
 .navbar {
 	position: relative;
-	background-color: #ac0033;
+	background-color: #46200D;
 	height: 70px;
   box-shadow: 8px 5px 8px rgba(138, 134, 134, 0.32);
 }
@@ -2051,7 +2003,7 @@ section#tres-sesenta {
  }
 
  .button-ty {
-   background-color: #ac0033;
+   background-color: #46200D;
    padding: 10px 20px;
    border-radius: 25px;
  }
@@ -2062,7 +2014,7 @@ section#tres-sesenta {
    }
 
    .button-ty {
-     background-color: #ac0033;
+     background-color: #46200D;
      padding: 10px 20px;
      border-radius: 25px;
      color: white;
@@ -2080,7 +2032,7 @@ section#tres-sesenta {
  #inicio {
   padding-bottom: 10%;
   padding-top: 10%;
-  background-image: url('banner-header.png');
+  background-image: url('Remanso-06.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2097,8 +2049,6 @@ section#tres-sesenta {
   border-radius: 20px 0px 0px 20px;
 }
 .logo-header-container {
-    border-radius: 20px 0px 0px 0px;
-    padding: 25px;
     text-align: right;
 }
 
@@ -2168,7 +2118,7 @@ a:hover, a:focus {
 }
 
 .form-header-container {
-    background-color: #a20f32;
+    background-color: #B25D31;
     // background-image: url('fondo-vertical.png');
     border-radius: 0px 20px 20px 0px;
     background-repeat: no-repeat;
@@ -2278,13 +2228,13 @@ a:hover, a:focus {
     padding-left: 0%;
   }
   .terms-header {
-    color: #ac0033;
+    color: #46200D;
   }
   a {
-    color: #ac0033;
+    color: #46200D;
   }
   a:hover, a:focus {
-    color: #ac0033;
+    color: #46200D;
   }
   #new_user {
     margin-top: 5%;

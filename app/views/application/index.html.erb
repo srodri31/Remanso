@@ -215,7 +215,7 @@
 
 	<!-- Nav -->
 	<div class="navbar navbar-inverse navbar-fixed-top" id="navigation">
-		<%= image_tag 'logo-header.png', id: 'logo-navbar', class: 'hide-on-mobile' %>
+		<%= image_tag 'Remanso-05.png', id: 'logo-navbar', class: 'hide-on-mobile' %>
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle btn-span" data-toggle="collapse" data-target=".navbar-collapse">
@@ -229,7 +229,6 @@
 					<li><a href="#proyecto">PROYECTO</a></li><span class="hover-color"> | </span>
 					<li><a href="#galeria">GALERÍA</a></li><span class="hover-color"> | </span>
 					<li><a href="#areas">APARTAMENTOS</a></li><span class="hover-color"> | </span>
-					<li><a href="#tres-sesenta"> RECORRIDO 360</a></li><span class="hover-color"> | </span>
 					<li><a href="#ubicacion">MAPA</a></li><span class="hover-color"> | </span>
 					<li><a href="#inicio"> CONTACTO</a></li>
 				</ul>
@@ -250,14 +249,12 @@
            <div class="text-center wow" data-wow-delay=".45s">
              <div class="row">
                <div class="col-md-8 col-md-offset-2">
-                 <div class="col-md-3 col-md-offset-2 no-padding h478">
+                 <div class="col-md-6 no-padding h478 hide-on-mobile">
                    <div class="logo-header-container">
-										 <%= image_tag 'img-promo.png',class:'hide-on-mobile img-text-header', alt: "Bono" %>
-										 <%= image_tag 'img-text-header-mobile.png',class:'hide-on-desktop show-on-mobile', alt: "Bono" %>
+						<%= image_tag 'Remanso-07.png', class:'hide-on-mobile', alt: "Remanso-06", style:"width: 100%; height: 100%" %>
                    </div>
                  </div>
-                 <div class="col-sm-6 form-header-container no-padding hidden-xs">
-									 <%= image_tag 'img_bono.png',class:'img-promo', alt: "Bono" %>
+                 <div class="col-sm-6 form-header-container no-padding hide-on-mobile">
                    <%= form_for @user, url: '/contact_us_top/', id: 'contact-form', method: 'post', class: 'row'  do |u| %>
                      <div class="form-group">
                        <%= u.text_field :name,  required: 'required', type: 'text', class: 'form-control mt20', placeholder: "Nombre*", style: 'color:black;' %>
@@ -293,7 +290,6 @@
 </header>
 
 <article class="hide-on-desktop show-on-mobile">
-	<p class="header-price-info-mobile text-center-import"><%= image_tag 'img_bono.png?v=1.0.0',class:'bono-mobile', alt: "Bono" %></p>
 	<div class="hidden-form text-center mb20">
 		<%= form_for @user, url: '/contact_us_top/', id: 'contact-form', method: 'post', class: 'row'  do |u| %>
 		<div class="content-hidden-form">
@@ -331,10 +327,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-xs-12 text-center left-side">
-					<div class="box-nuestro-proyecto">
-						<span class="box-nuestro-text">NUESTRO <br> PROYECTO</span>
-					</div>
-					<%= image_tag ('aptos-project.png'), class: 'img-project-apto' %>
+					<%= image_tag ('Remanso-09.png'), class: 'img-project-apto' %>
 				</div>
 				<div class="col-md-6 col-xs-12 right-project">
 					<p class="text-justify paragraph color-white" id="aptos-text">
@@ -370,49 +363,45 @@
 				<div id="home-center" class="text-center element_fade_in center-block">
 					<h1 class="titles mb-30">ZONAS SOCIALES</h1>
 					<div class="row">
-						<div class="col-sm-1">
+						<div class="col-sm-2">
 						</div>
 						<div class="col-sm-2 col-xs-6">
-							<%= image_tag 'beneficios/beneficio-1.png', alt:'Salón social' %>
-							<figcaption class="mb-30">Portería</figcaption>
+							<%= image_tag 'Remanso-10.png', alt:'Salón social' %>
+							<figcaption class="mb-30"></figcaption>
 						</div>
 						<div class="col-sm-2 col-xs-6">
-							<%= image_tag 'beneficios/beneficio-2.png', alt:'Salón living room' %>
-							<figcaption class="mb-30">Salón social</figcaption>
+							<%= image_tag 'Remanso-11.png', alt:'Salón living room' %>
+							<figcaption class="mb-30"></figcaption>
 						</div>
 						<div class="col-sm-2 col-xs-6">
-							<%= image_tag 'beneficios/beneficio-3.png', alt:'Gimnasio' %>
-							<figcaption class="mb-30">Cancha de fútbol sintética (no profesional)</figcaption>
+							<%= image_tag 'Remanso-12.png', alt:'Gimnasio' %>
+							<figcaption class="mb-30"></figcaption>
 						</div>
 						<div class="col-sm-2 col-xs-6">
-							<%= image_tag 'beneficios/beneficio-4.png', alt:'Jacuzzi' %>
-							<figcaption class="mb-30">Gimnasio al aire libre</figcaption>
+							<%= image_tag 'Remanso-13.png', alt:'Jacuzzi' %>
+							<figcaption class="mb-30"></figcaption>
 						</div>
-						<div class="col-sm-2 hidden-xs">
-							<%= image_tag 'beneficios/beneficio-5.png', alt:'Casa de muñecas' %>
-							<figcaption class="mb-30">Piscina adultos y niños</figcaption>
-						</div>
-						<div class="col-sm-1">
+						<div class="col-sm-2">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-2">
 						</div>
 						<div class="col-sm-2 col-xs-6">
-							<%= image_tag 'beneficios/beneficio-6.png', alt:'Juegos infantiles' %>
-							<figcaption class="mb-30">Juegos infantiles</figcaption>
+							<%= image_tag 'Remanso-14.png', alt:'Juegos infantiles' %>
+							<figcaption class="mb-30"></figcaption>
 						</div>
 						<div class="col-sm-2 col-xs-6">
-							<%= image_tag 'beneficios/beneficio-7.png', alt:'Parque para mascotas' %>
-							<figcaption class="mb-30">BBQ</figcaption>
+							<%= image_tag 'Remanso-15.png', alt:'Parque para mascotas' %>
+							<figcaption class="mb-30"></figcaption>
 						</div>
 						<div class="col-sm-2 col-xs-6">
-							<%= image_tag 'beneficios/beneficio-8.png', alt:'Piscina' %>
-							<figcaption class="mb-30">Zona para mascotas</figcaption>
+							<%= image_tag 'Remanso-16.png', alt:'Piscina' %>
+							<figcaption class="mb-30"></figcaption>
 						</div>
 						<div class="col-sm-2 col-xs-6">
-							<%= image_tag 'beneficios/beneficio-9.png', alt:'Turco' %>
-							<figcaption class="mb-30">Parqueaderos de visitantes</figcaption>
+							<%= image_tag 'Remanso-17.png', alt:'Turco' %>
+							<figcaption class="mb-30"></figcaption>
 						</div>
 						<div class="col-sm-2">
 						</div>
@@ -422,7 +411,6 @@
 		</div>
 		<!-- Atractivos -->
 		<article id="galeria">
-			<h1 class="titles center-block title-div imgs-title">IMÁGENES DEL PROYECTO</h1>
 			<div id="carousel-visitantes" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators hidden-xs hidden-sm">
 						<li data-target="#carousel-visitantes" data-slide-to="0" class="active"></li>
@@ -432,26 +420,37 @@
 						<li data-target="#carousel-visitantes" data-slide-to="4"></li>
 						<li data-target="#carousel-visitantes" data-slide-to="5"></li>
 						<li data-target="#carousel-visitantes" data-slide-to="6"></li>
+						<li data-target="#carousel-visitantes" data-slide-to="7"></li>
+						<li data-target="#carousel-visitantes" data-slide-to="8"></li>
 					</ol>
 
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<%= image_tag 'content/galeria/galeria_img1.png', class: 'lazy', data: {original: "Banner 1"} %>
+							<%= image_tag 'galeria/Remanso-41.png', class: 'lazy', data: {original: "Banner 1"} %>
 						</div>
 						<div class="item">
-							<%= image_tag 'content/galeria/galeria_img2.png', class: 'lazy', data: {original: "Banner 2"} %>
+							<%= image_tag 'galeria/Remanso-42.png', class: 'lazy', data: {original: "Banner 2"} %>
 						</div>
 						<div class="item">
-							<%= image_tag 'content/galeria/galeria_img3.png', class: 'lazy', data: {original: "Banner 3"} %>
+							<%= image_tag 'galeria/Remanso-43.png', class: 'lazy', data: {original: "Banner 3"} %>
 						</div>
 						<div class="item">
-							<%= image_tag 'content/galeria/galeria_img4.png', class: 'lazy', data: {original: "Banner 4"} %>
+							<%= image_tag 'galeria/Remanso-44.png', class: 'lazy', data: {original: "Banner 4"} %>
 						</div>
 						<div class="item">
-							<%= image_tag 'content/galeria/galeria_img5.png', class: 'lazy', data: {original: "Banner 5"} %>
+							<%= image_tag 'galeria/Remanso-45.png', class: 'lazy', data: {original: "Banner 5"} %>
 						</div>
 						<div class="item">
-							<%= image_tag 'content/galeria/galeria_img6.png', class: 'lazy', data: {original: "Banner 6"} %>
+							<%= image_tag 'galeria/Remanso-46.png', class: 'lazy', data: {original: "Banner 6"} %>
+						</div>
+						<div class="item">
+							<%= image_tag 'galeria/Remanso-47.png', class: 'lazy', data: {original: "Banner 7"} %>
+						</div>
+						<div class="item">
+							<%= image_tag 'galeria/Remanso-48.png', class: 'lazy', data: {original: "Banner 8"} %>
+						</div>
+						<div class="item">
+							<%= image_tag 'galeria/Remanso-49.png', class: 'lazy', data: {original: "Banner 9"} %>
 						</div>
 					</div>
 
@@ -490,8 +489,12 @@
 			<div id="title-areas">
 				<div class="row">
 					<div class="col-md-12 col-xs-12 text-center center-in-mobile">
-						<%= image_tag 'banner_precio_porton_aptos.png', class: 'logo-area-1' %>
-
+						<%= image_tag 'Remanso-18.png', class: 'logo-area-1' %>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-xs-12 text-center center-in-mobile">
+						<%= image_tag 'Remanso-19.png', class: 'logo-area-1' %>
 					</div>
 				</div>
 			</div>
@@ -499,36 +502,18 @@
 				<div class="row row-padding">
 					<div class="col-md-8 col-xs-12">
 						<div class="col-md-6">
-							<div class="text-center">
+							<div class="text-center margin-top-responsive-box">
 								<div class="col-md-12 no-padding">
 									<%= link_to '#myModal', class: '', :data =>{:toggle=>"modal"} do  %>
-									<%= image_tag 'planos/plano-1.png', alt: 'Apartamentos Amaretto' %>
+									<%= image_tag 'Remanso-21.png' %>
 									<% end %>
-								</div>
-								<div class="col-md-12 box-area bg-color-blue">
-									<h3>TIPO F - G (46M²)</h3>
-									<p class="pd-bottom-12">
-										Área total construida: 46 m²
-										Área privada construida: 40 m² Cocina, zona de ropas, salón - comedor,
-										baño social, alcoba auxiliar, alcoba principal
-									</p>
 								</div>
 							</div>
 							<div class="text-center box-container">
 								<div class="col-md-12 no-padding">
 									<%= link_to '#myModal2', class: '', :data =>{:toggle=>"modal"} do  %>
-									<%= image_tag 'planos/plano-3.png', alt: 'Apartamentos Amaretto' %>
+									<%= image_tag 'Remanso-24.png' %>
 									<% end %>
-								</div>
-								<div class="col-md-12 box-area bg-color-blue">
-									<h3>TIPO A - D (70M²)</h3>
-									<p>
-										Área total construida: 70 m²
-										Área privada construida: 63 m² Cocina,
-										zona de ropas, sala - comedor- estudio,
-										baño social, balcón, dos alcobas auxiliares,
-										alcoba principal con baño
-									</p>
 								</div>
 							</div>
 						</div>
@@ -536,46 +521,34 @@
 							<div class="text-center margin-top-responsive-box">
 								<div class="col-md-12 no-padding">
 									<%= link_to '#myModal3', class: '', :data =>{:toggle=>"modal"} do  %>
-									<%= image_tag 'planos/plano-2.png', alt: 'Apartamentos Amaretto' %>
+									<%= image_tag 'Remanso-22.png' %>
 									<% end %>
-								</div>
-								<div class="col-md-12 box-area bg-color-blue">
-									<h3>TIPO B - C - E - H (61M²)</h3>
-									<p class="pd-bottom-12">
-										Área total construida: 61 m²
-										Área privada construida: 55 m² Cocina, zona de ropas, salón - comedor,
-										baño social, balcón, dos alcobas auxiliares, alcoba principal con baño
-									</p>
 								</div>
 							</div>
 							<div class="text-center box-container">
 								<div class="col-md-12 no-padding">
 									<%= link_to '#myModal4', class: '', :data =>{:toggle=>"modal"} do  %>
-									<%= image_tag 'planos/plano-4.png', alt: 'Apartamentos Amaretto' %>
+									<%= image_tag 'Remanso-25.png' %>
 									<% end %>
-								</div>
-								<div class="col-md-12 box-area bg-color-blue">
-									<h3>TIPO B - C TORRE 2 (68M²)</h3>
-									<p>
-										Área total construida: 68 m²
-										Área privada construida: 61 m² Cocina,
-										zona de ropas, salón - comedor , baño
-										social, balcón, dos alcobas auxiliares,
-										alcoba principal con baño
-									</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-xs-12">
 						<div class="text-center margin-top-responsive-box">
-							<div class="col-md-12 no-padding">
-								<%= link_to '#myModal13', class: '', :data =>{:toggle=>"modal"} do  %>
-									<%= image_tag 'planos/plano-5.png', alt: 'Apartamentos Amaretto' %>
-								<% end %>
+							<div class="text-center margin-top-responsive-box">
+								<div class="col-md-12 no-padding">
+									<%= link_to '#myModal3', class: '', :data =>{:toggle=>"modal"} do  %>
+									<%= image_tag 'Remanso-23.png' %>
+									<% end %>
+								</div>
 							</div>
-							<div class="col-md-12 box-area bg-color-blue">
-								<h3 class="solo-text">URBANISMO</h3>
+							<div class="text-center box-container">
+								<div class="col-md-12 no-padding">
+									<%= link_to '#myModal4', class: '', :data =>{:toggle=>"modal"} do  %>
+									<%= image_tag 'Remanso-26.png' %>
+									<% end %>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -585,18 +558,6 @@
 		<!-- /Areas -->
 	</section>
 	<!--/apartamentos -->
-
-	<section class="container-fluid" id="tres-sesenta">
-		<div class="row">
-			<div class="col-md-6 col-xs-12 text-right">
-				<%= image_tag '360-text.png', class: 'img-left-360' %>
-			</div>
-			<div class="col-md-6 col-xs-12 text-left label-360">
-				<%= image_tag '360-360.png', class: 'img-right-360' %><br>
-				<%= link_to 'HACER RECORRIDO', 'http://embed.walk360.co/default.aspx?v=158&w=1200&h=600', class: 'btn btn-360', target: '_blank' %>
-			</div>
-		</div>
-	</section>
 
 	<!-- ubicacion -->
 	<section id="ubicacion" class="ubicacion">
