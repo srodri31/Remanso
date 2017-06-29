@@ -1,3 +1,42 @@
+@font-face {
+  font-family: 'Bebas-Bold';
+  src: url('BebasNeue Bold 2.otf')  format('opentype'),
+      url('BebasNeue Bold.otf')  format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas-Book';
+  src: url('BebasNeue Book 2.otf')  format('opentype'),
+      url('BebasNeue Book.otf')  format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas-light';
+  src: url('BebasNeue Light 2.otf')  format('opentype'),
+      url('BebasNeue Light.otf')  format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTN';
+  src: url('PTN77F.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT-sans';
+  src: url('PTSans.ttc') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 $canarias-dark-blue: #1c4c5b;
 $canarias-light-blue: #1ec3f3;
@@ -11,7 +50,7 @@ html,body,div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,img,small,sub,b,dl,dd,dt,ul,
 }
 
 html,body{
-    font-family: 'Dosis-Book', sans-serif;
+    font-family: 'PT-sans', sans-serif;
     font-size:16px;
     height:100%;
     width:100%;
@@ -28,13 +67,6 @@ body{
     overflow-x:hidden
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Dosis-Bold', sans-serif;
-    font-weight: 500;
-    text-transform:none;
-    color:#222222;
-}
-
 .div-title {
   padding: 15px;
   padding-top: 30PX;
@@ -48,9 +80,11 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-right-radius: 17px;
   margin: auto;
   text-align: center;
+  font-family: "Bebas-Bold";
 }
 
 .title-contact {
+  font-family: "Bebas-Bold";
   background: #C85B30;
   padding: 10px;
   width: 25%;
@@ -59,6 +93,43 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
   text-align: center;
 }
+
+.padding-dogs-img {
+  padding-top: 0px !important;
+  padding-left: 0px !important; 
+}
+
+.contact-form-2 {
+  margin: 0px !important;
+  padding-top: 25px !important;
+}
+
+.logo-proyecto {
+  background-image: url('Remanso-39.png');
+  background-size: 100% 100%;
+  width: 40%;
+  height: 45%
+}
+
+.text-form {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
+
+.text-form-2 {
+  font-family: "Bebas-Book";
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.text-form-2 b {
+  font-family: "Bebas-Bold" !important;
+  font-size: 25px;
+}
+
 
 .form-control::-webkit-input-placeholder {
    color: #a20f32;
@@ -197,8 +268,9 @@ footer {
 }
 
 .title-footer {
+  font-family: "Bebas-Bold";
   font-size: 35px;
-  color: white;
+  color: #46200D;
   display: inline-block;
 }
 
@@ -230,7 +302,7 @@ footer {
 
 .small-letter {
   font-size: 12px;
-  color: white;
+  color: #46200D;
 }
 
 /* Home Pattern And Image Parallax */
@@ -275,7 +347,7 @@ textarea{
     background-position: center center;
 }
 .home-pattern-gracias{
-    background:url('banner-header.png');
+    background:url('Remanso-40.png');
   background-repeat: no-repeat;
   height:100%;
   background-size: cover;
@@ -283,12 +355,10 @@ textarea{
 }
 
 .content-info-gracias {
-  margin-top: 22%;
+  margin-top: 25%;
   text-align: center;
-  background-color: #e9324d;
-  width: 50%;
-  padding: 50px 0 30px;
-  box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.3)
+  width: 80%;
+  padding-top: 10%;
 }
 
 .ty-container {
@@ -337,6 +407,13 @@ textarea{
 }
 
 @media (max-width: 720px) {
+  .logo-proyecto {
+    width: 90%;
+    height: 45%;
+  }
+  .align-top-thankyou {
+    top: 17%;
+  }
   .logo-ty {
     width: 50%;
   }
@@ -353,6 +430,15 @@ textarea{
     width: 99%;
     margin-top: 45%;
   }
+  .map-responsive {
+    width: 100%;
+  }
+  .title {
+    width: 75%;
+  }
+  .title-contact {
+    width: 75%;
+  }
 }
 
 .content-info-gracias .contact-info img {
@@ -360,17 +446,16 @@ textarea{
 }
 
 .content-info-gracias h1{
-  background-color: rgb(0, 84, 98);
   display: inline-block;
-  color: white;
+  color: #46200D;
   text-transform: uppercase;
   margin: 15px 0;
   padding: 10px;
 }
 
 .content-info-gracias p{
-    color: #fff;
-    font-size: 27px;
+    color: #46200D;
+    font-size: 18px;
     margin-bottom: 0px;
 }
 
@@ -620,10 +705,10 @@ footer {
 .contact-info a:hover { color: #4c4245;}
 
 .ubicacion{
-  height: 500px;
+  height: 750px;
   position: relative;
-  background-color: #fff;
-  margin-bottom: 14%;
+  background-color: #F5F5F5;
+  margin-bottom: 2%;
 }
 
 .ubicacion #home-center {
@@ -655,6 +740,11 @@ footer {
   }
 
   #mapa-img { margin-top: 20px;}
+
+  .logo-proyecto {
+    width: 80%;
+    height: 50%;
+  }
 }
 
 .btn-mapa{
@@ -681,7 +771,7 @@ footer {
 #logo-navbar{
     position: absolute;
     top: -10px;
-    width: 13%;
+    width: 17%;
     margin-left: 4%;
 }
 
@@ -745,8 +835,8 @@ footer {
 .titles span { color: #9B0078;}
 
 .paragraph{
+    font-family: 'PT-sans';
     font-weight: 300;
-    color: #26236A;
     font-size: 12pt;
 }
 
@@ -871,8 +961,6 @@ footer {
 }
 #proyecto .mycontainer{ padding-bottom: 0; }
 #proyecto ul > li {
-  font-family: 'Dosis-Book';
-  color: white;
   font-size: 15px;
   margin-top: 4px;
 }
@@ -882,13 +970,11 @@ footer {
   padding: 6px 34px 0px 34px;
   margin: 30px 0;
   border-radius: 14px;
-  font-family: 'Dosis-Book';
 }
 #aptos-subtitle {
   font-size: 20px;
-  color: white;
   margin-left: 34px;
-  font-family: 'Dosis-Book';
+  font-family: 'PTN';
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -907,7 +993,7 @@ footer {
 }
 
 .text-nav-li{
-    font-family: 'Dosis-SemiBold', sans-serif;
+    font-family: 'PT-sans', sans-serif;
     line-height: 3.5;
     font-size: 20px;
 }
@@ -952,7 +1038,7 @@ footer {
 }
 
 .row-padding{
-    padding-bottom: 20px;
+    padding-bottom: 35px;
 }
 
 .title-atractivos{
@@ -961,7 +1047,7 @@ footer {
 
 .title-div { width: 100%; text-align: center;}
 
-#title-areas { text-align: center; background-color: #FFF; padding: 30px 0;}
+#title-areas { text-align: center; background-color: #FFF;}
 #title-areas h3 {
   color: #fff;
   text-transform: uppercase;
@@ -1070,7 +1156,16 @@ footer {
   background-color: white;
 }
 
-#new_user { width: 97.5%; margin-left: 2.5%; margin-top: 21%; }
+#new_user { 
+  width: 97.5%; margin-left: 2.5%; margin-top: 3%;
+  font-family: "PT-sans";
+  color: black;  
+}
+
+b {
+  font-family: "PTN";
+  font-size: 21px;
+}
 
 #areas .btn-purple { font-size: 1em; font-weight: bold; padding: 4px 12px; margin-top: -12px; }
 #areas { background-color: #FFF; }
@@ -1175,12 +1270,11 @@ footer {
 
 .footer-habla{
   padding: 10px 0;
-  background-color: #00758d;
 }
 
 .footer-habla p{
 	font-size: 10px;
-  color: white;
+  color: #46200D;
 }
 
 .pd-left-5 {
@@ -1354,6 +1448,14 @@ footer {
 
 @media (min-width: 768px) and (max-width: 991px) {
 
+  .title {
+    width: 55%;
+  }
+
+  .title-contact {
+    width: 55%;
+  }
+
 	.logo-header{
 		width: 185px;
              top: -35px;
@@ -1439,7 +1541,7 @@ footer {
   #contacto {height: 450px;}
 
 	.ubicacion{
-		height: 450px !important;
+		height: 650px!important;
     background-position: bottom right;
 	}
 
@@ -1462,7 +1564,7 @@ footer {
 	.navbar .nav {
 		width: 150px;
 		position: absolute;
-		background-color: #e9324d;
+		background-color: #46200D;
 		display: block;
 		border-radius: 0px 0px 0px 10px;
 		top: 70px;
@@ -1571,7 +1673,7 @@ footer {
 	}
 
 	.ubicacion{
-		height: 510px !important;
+		height: 650px !important;
 	}
 
 	.btn-mapa{
@@ -2056,7 +2158,7 @@ section#tres-sesenta {
  }
 
  .logo-area-2 {
-   width: 50%;
+   width: 40%;
  }
 
  #inicio {
@@ -2079,6 +2181,8 @@ section#tres-sesenta {
   border-radius: 20px 0px 0px 20px;
 }
 .logo-header-container {
+    width: 100%;
+    height: 100%;
     text-align: right;
 }
 
@@ -2246,7 +2350,7 @@ a:hover, a:focus {
     display: inline-block;
   }
   .ubicacion {
-    height: 259px !important;
+    height: 650px !important;
   }
   .logo-area-1 {
     width: 80%;

@@ -230,7 +230,7 @@
 					<li><a href="#galeria">GALERÍA</a></li><span class="hover-color"> | </span>
 					<li><a href="#areas">APARTAMENTOS</a></li><span class="hover-color"> | </span>
 					<li><a href="#ubicacion">MAPA</a></li><span class="hover-color"> | </span>
-					<li><a href="#inicio"> CONTACTO</a></li>
+					<li><a href="#contact_us"> CONTACTO</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -255,6 +255,8 @@
                    </div>
                  </div>
                  <div class="col-sm-6 form-header-container no-padding hide-on-mobile">
+					<p class="text-form-2">DEJANOS TUS DATOS Y TE<br>
+						<b>MANTENDREMOS INFORMADO</b><p>
                    <%= form_for @user, url: '/contact_us_top/', id: 'contact-form', method: 'post', class: 'row'  do |u| %>
                      <div class="form-group">
                        <%= u.text_field :name,  required: 'required', type: 'text', class: 'form-control mt20', placeholder: "Nombre*", style: 'color:black;' %>
@@ -324,41 +326,38 @@
 	<section id="proyecto">
 		<!-- Caracteristicas -->
 		<!-- Container -->
-		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-xs-12">
+				<div class="col-md-6 col-xs-12 padding-dogs-img">
 					<%= image_tag ('Remanso-09.png'), class: 'img-project-apto' %>
 				</div>
 				<div class="col-md-6 col-xs-12">
 					<div class="div-title">
 						<div class="title">
-							PROYECTO
+							<h1>PROYECTO</h1>
 						</div>
 					</div>
-					<p class="text-justify paragraph color-white" id="aptos-text">
-						<strong>Portón del Norte</strong> es un hermoso proyecto de tan solo 2 torres de apartamentos,
-						ubicado en Copacabana, en un sector en pleno desarrollo conocido como
-						loma Los Álvarez, en límites con Bello y a solo 5 minutos de la estación del
-						Metro de Niquía.
-						<br>
-						<br>
-						Una de las fortalezas que tiene Portón del Norte es su cercanía con el transporte
-						público. Por estar sobre la vía Machado, cuenta con ruta de buses que lo
-						conectan con el metro y por tanto con toda el área metropolitana
+					<p class="text-justify paragraph " id="aptos-text">
+						Remanso del Rodeo, un proyecto ubicado en Belén, sector Rodeo Alto, un
+						lugar exclusivo con entorno campestre, excelente valorización y una vista
+						inigualable sobre Rodeo Alto y gran parte de la ciudad de Medellín.
+						<br><br>
+						Cuenta con beneficios únicos de movilidad, cercanía a lugares
+						comerciales, además de tener diferentes vías de acceso.
 					</p>
-					<p><strong id="aptos-subtitle">Cerca de:</strong></p>
+					<p><strong id="aptos-subtitle">Cercano a:</strong></p>
 					<ul class="ml-14">
-						<li>Centro comercial Puerta del Norte.</li>
-						<li>Estadio de fútbol Tulio Ospina.</li>
-						<li>Unidad deportiva Machado.</li>
-						<li>Parque acuático las Aguas de EPM.</li>
-						<li>Parque de Bello.</li>
-						<li>Parque de Copacabana.</li>
-						<li>Universidad San Buenaventura..</li>
+						<li>Cínica las Américas</li>
+						<li>Club el Rodeo</li>
+						<li>Carrera 80</li>
+						<li>Guayabal</li>
+						<li>La Mota</li>
+						<li>Aeropuerto Olaya Herrera</li>
+						<li>Parque Juan Pablo II</li>
+						<li>Sector Comercial Guayabal</li>
+						<li>Éxito de la Gran Vía</li>
 					</ul>
 				</div>
 			</div>
-		</div>
 		<!--/Container -->
 		<!-- /Caracteristicas -->
 
@@ -368,10 +367,14 @@
 				<div id="home-center" class="text-center element_fade_in center-block">
 					<div class="div-title">
 						<div class="title">
-							ZONAS COMÚNES
+							<h1>ZONAS COMÚNES</h1>
 						</div>
 					</div>
 					<div class="row">
+						<div class="col-xs-12 text-center" style="padding-bottom:20px">
+							<h3><i>Un lugar exclusivo para brindarte a ti y<br>
+							a tu familia todo lo que necesitan.</i></h3>
+						</div>
 						<div class="col-sm-2">
 						</div>
 						<div class="col-sm-2 col-xs-6">
@@ -435,7 +438,7 @@
 
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<%= image_tag 'galeria/Remanso-41.png', class: 'lazy', data: {original: "Banner 1"} %>
+							<%= image_tag 'galeria/Remanso-49.png', class: 'lazy', data: {original: "Banner 1"} %>
 						</div>
 						<div class="item">
 							<%= image_tag 'galeria/Remanso-42.png', class: 'lazy', data: {original: "Banner 2"} %>
@@ -459,7 +462,7 @@
 							<%= image_tag 'galeria/Remanso-48.png', class: 'lazy', data: {original: "Banner 8"} %>
 						</div>
 						<div class="item">
-							<%= image_tag 'galeria/Remanso-49.png', class: 'lazy', data: {original: "Banner 9"} %>
+							<%= image_tag 'galeria/Remanso-41.png', class: 'lazy', data: {original: "Banner 9"} %>
 						</div>
 					</div>
 
@@ -496,12 +499,12 @@
 				</div>
 			</div> -->
 			<div id="title-areas">
-				<div class="row">
+				<div class="row row-padding">
 					<div class="col-md-12 col-xs-12 text-center center-in-mobile">
-						<%= image_tag 'Remanso-18.png', class: 'logo-area-1' %>
+						<%= image_tag 'Remanso-18.png', class: 'logo-area-2' %>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row row-padding">
 					<div class="col-md-12 col-xs-12 text-center center-in-mobile">
 						<%= image_tag 'Remanso-19.png', class: 'logo-area-1' %>
 					</div>
@@ -575,11 +578,15 @@
 			<div class="col-sm-8 col-sm-offset-2">
 			<div class="div-title">
 				<div class="title-contact">
-					CONTÁCTANOS
+					<h2>CONTÁCTANOS</h2>
 				</div>
 			</div>
-			<%= form_for @user, url: '/contact_us_top/', id: 'contact-form', method: 'post', class: 'row'  do |u| %>
+			<%= form_for @user, url: '/contact_us_top/', method: 'post', class: 'row contact-form-2'  do |u| %>
 			<div class="content-hidden-form">
+				<div class="col-xs-12 text-form">
+					<p>Déjanos tus datos y un asesor de nuestro proyecto se<br>
+					comunicará para brindarte la mejor asesoria.<p>
+				</div>
 				<div class="col-sm-6">
 					<div class="form-group">
 						<%= u.text_field :name,  required: 'required', type: 'text', class: 'form-control mt20', placeholder: "Nombre*", style: 'color:black;' %>
@@ -622,24 +629,25 @@
 				<div class="col-md-12 text-center">
 					<div class="div-title">
 						<div class="title">
-							MAPA
+							<h2>MAPA</h2>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-12 text-center">
+				<div class="col-md-12 text-center ">
 					Sector de Belén Rodeo Alto, cerca de la Clínica las Américas, Club el Rodeo, Parque<br>
 					Juan Pablo II, Mall comercial la Gran Vía y La Mota, Éxito de la Gran Vía y sector<br>
 					comercial de Guayabal, entre otras comodidades.
 				</div>
 				<div class="col-md-12 text-center">
 					<%= link_to "#", target: 'blank' do %>
-						<%= image_tag 'Remanso-28.png', class: 'hide-on-mobile' %>
+						<%= image_tag 'Remanso-28.png', class: "map-responsive"%>
 					<% end %>
-					<div class="">
+					<!-- <div class="">
 						<%= link_to "waze://?ll=6.3336861,-75.5338443&navigate=yes", target: 'blank', class: 'hide-on-desktop show-on-mobile' do %>
 							<%= image_tag 'waze-logo', class: 'wase-logo' %>
 						<% end %>
 					</div>
+					-->
 				</div>
 		</div>
 		<div class="clearfix"></div>
@@ -648,7 +656,7 @@
 	<section id="sponsors">
 		<div class="div-title">
 			<div class="title">
-				GRUPO PROFESIONAL
+				<h2>GRUPO PROFESIONAL</h2>
 			</div>
 		</div>
 		<div class="row">
